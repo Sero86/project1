@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+        <data>
+            <variable
+                name="details"
+                type="com.udacity.project1.models.Viewmodel">
+
+            </variable>
+            <import type="android.view.View"/>
+        </data>
+    <!-- this linear layout is used to hold the scrollview and the
+    floating action button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:clickable="true"
+            android:contentDescription="TODO"
+            android:focusable="true"
+            android:src="@android:drawable/ic_input_add"
+            tools:ignore="ImageContrastCheck"
+
+
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/Email_text">
+
+            <!-- linear layout to display the shoe in it as a list-->
+            <LinearLayout
+                android:id="@+id/shoe_list_linear_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+    </layout>
